@@ -1,0 +1,711 @@
+/* ========================================
+   PixelPulse Studio - Responsive Styles
+   Mobile-First Approach
+   ======================================== */
+
+/* Tablet Devices (768px and below) */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .hero-stats {
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 36px;
+    }
+    
+    /* Section Headers */
+    .section-title {
+        font-size: 40px;
+    }
+    
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-text .section-title {
+        text-align: center;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .about-image img {
+        height: 400px;
+    }
+    
+    /* Pricing Section */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+    
+    /* Testimonials Section */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Section */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Devices (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Typography Adjustments */
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(10, 10, 15, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 60px;
+        gap: 30px;
+        transition: var(--transition-medium);
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+    
+    /* Hamburger Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 30px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    /* Gradient Orbs */
+    .gradient-orb-1 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .gradient-orb-2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .gradient-orb-3 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Section Padding */
+    :root {
+        --section-padding: 70px 0;
+    }
+    
+    /* Section Headers */
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+    }
+    
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .service-card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .service-features {
+        gap: 8px;
+    }
+    
+    .service-features li {
+        font-size: 13px;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-filter {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .portfolio-item {
+        aspect-ratio: 16/9;
+    }
+    
+    .portfolio-overlay {
+        padding: 20px;
+    }
+    
+    .portfolio-info h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .portfolio-info p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    .portfolio-tags span {
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+    
+    /* About Section */
+    .about-highlights {
+        gap: 20px;
+    }
+    
+    .highlight-item {
+        gap: 15px;
+    }
+    
+    .highlight-item i {
+        font-size: 28px;
+    }
+    
+    .highlight-item h4 {
+        font-size: 16px;
+    }
+    
+    .highlight-item p {
+        font-size: 13px;
+    }
+    
+    .about-image img {
+        height: 300px;
+    }
+    
+    /* Pricing Section */
+    .pricing-card {
+        padding: 30px 20px;
+    }
+    
+    .pricing-header h3 {
+        font-size: 22px;
+    }
+    
+    .price {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .currency {
+        font-size: 20px;
+    }
+    
+    .amount {
+        font-size: 48px;
+    }
+    
+    .period {
+        font-size: 14px;
+    }
+    
+    .pricing-features {
+        gap: 12px;
+    }
+    
+    .pricing-features li {
+        font-size: 14px;
+    }
+    
+    /* Testimonials Section */
+    .testimonial-card {
+        padding: 25px;
+    }
+    
+    .testimonial-rating {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-author img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-author h4 {
+        font-size: 15px;
+    }
+    
+    .testimonial-author span {
+        font-size: 12px;
+    }
+    
+    /* Contact Section */
+    .contact-info {
+        gap: 25px;
+    }
+    
+    .info-item {
+        gap: 15px;
+    }
+    
+    .info-item i {
+        font-size: 24px;
+    }
+    
+    .info-item h4 {
+        font-size: 15px;
+    }
+    
+    .info-item p {
+        font-size: 14px;
+    }
+    
+    .social-links {
+        gap: 12px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .contact-form {
+        gap: 15px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .form-group textarea {
+        min-height: 120px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-brand .logo {
+        align-items: center;
+    }
+    
+    .footer-brand p {
+        text-align: center;
+        font-size: 13px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .link-column h4 {
+        font-size: 15px;
+    }
+    
+    .link-column a {
+        font-size: 13px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Hero Section */
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .navbar-container {
+        padding: 0 15px;
+    }
+    
+    /* Section Headers */
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .section-subtitle {
+        font-size: 14px;
+    }
+    
+    /* Services Section */
+    .service-card {
+        padding: 25px 18px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .service-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-filter {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    
+    /* About Section */
+    .about-intro {
+        font-size: 16px;
+    }
+    
+    .about-story {
+        font-size: 14px;
+    }
+    
+    .highlight-item h4 {
+        font-size: 15px;
+    }
+    
+    .highlight-item p {
+        font-size: 13px;
+    }
+    
+    /* Pricing Section */
+    .amount {
+        font-size: 40px;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .footer-links {
+        gap: 20px;
+    }
+}
+
+/* Large Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 72px;
+    }
+    
+    .section-title {
+        font-size: 56px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra Large Desktop (1920px and above) */
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .hero-title {
+        font-size: 84px;
+    }
+    
+    .section-title {
+        font-size: 64px;
+    }
+}
+
+/* Landscape Orientation on Mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 80px 0 40px;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .nav-menu {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .navbar,
+    .hero-buttons,
+    .scroll-indicator,
+    .social-links,
+    .contact-form,
+    .portfolio-cta {
+        display: none;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 40px 0;
+    }
+    
+    .gradient-orb {
+        display: none;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --neon-purple: #ff00ff;
+        --neon-blue: #00ffff;
+        --neon-pink: #ff1493;
+    }
+    
+    .service-card,
+    .pricing-card,
+    .testimonial-card {
+        border-width: 2px;
+    }
+}
+
+/* Dark Mode Support (for users who prefer darker themes) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-dark: #0a0a0f;
+        --bg-darker: #050508;
+        --bg-card: #12121a;
+    }
+}
+
+/* Light Mode Support (for users who prefer lighter themes) */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-dark: #ffffff;
+        --bg-darker: #f5f5f5;
+        --bg-card: #f0f0f0;
+        --text-primary: #1a1a1a;
+        --text-secondary: #4a4a4a;
+        --text-muted: #8a8a8a;
+    }
+}

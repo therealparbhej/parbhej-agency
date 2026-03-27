@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelPulse Studio - Professional design services for YouTube banners, thumbnails, video editing, logos, and more. Ignite your brand with pixel-perfect creativity.">
+    <title>PixelPulse Studio | Digital Design Agency</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Pixel<span class="neon-purple">Pulse</span></span>
+                <span class="logo-tagline">Studio</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-orb gradient-orb-3"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title fade-in">
+                Ignite Your Brand with 
+                <span class="gradient-text">Pixel-Perfect Creativity</span>
+            </h1>
+            <p class="hero-subtitle fade-in-delay">
+                We design visuals that grab attention and drive engagement. From YouTube thumbnails to brand identities, we bring your vision to life.
+            </p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <span>View Portfolio</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-label">% Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Professional design solutions tailored to elevate your brand</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>YouTube Thumbnails</h3>
+                    <p>High CTR designs that make viewers click. Bold, eye-catching thumbnails optimized for maximum engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Designs</li>
+                        <li><i class="fas fa-check"></i> Fast Delivery</li>
+                        <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-banner"></i>
+                    </div>
+                    <h3>YouTube Banners</h3>
+                    <p>Professional channel branding that represents your identity. Stand out with custom banner designs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Channel Art</li>
+                        <li><i class="fas fa-check"></i> Mobile Optimized</li>
+                        <li><i class="fas fa-check"></i> Source Files</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional cuts, transitions, and effects. Transform raw footage into polished, engaging content.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Color Grading</li>
+                        <li><i class="fas fa-check"></i> Sound Design</li>
+                        <li><i class="fas fa-check"></i> Motion Graphics</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Reels Editing</h3>
+                    <p>Viral-ready Instagram Reels edits. Quick cuts, trending effects, and music synchronization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Trending Effects</li>
+                        <li><i class="fas fa-check"></i> Music Sync</li>
+                        <li><i class="fas fa-check"></i> Captions</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Logo Design</h3>
+                    <p>Unique brand identity through memorable logos. Create a lasting impression with professional design.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Concepts</li>
+                        <li><i class="fas fa-check"></i> Vector Files</li>
+                        <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card glow-effect">
+                    <div class="service-icon">
+                        <i class="fas fa-billboard"></i>
+                    </div>
+                    <h3>Posters & Billboards</h3>
+                    <p>Eye-catching visuals for print and digital. Large-format designs that command attention.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Print Ready</li>
+                        <li><i class="fas fa-check"></i> High Resolution</li>
+                        <li><i class="fas fa-check"></i> Multiple Formats</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">Explore our latest projects and success stories</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="print">Print</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="youtube">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?youtube,thumbnail" alt="YouTube Thumbnail Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Gaming Channel Thumbnails</h3>
+                                <p>High-energy thumbnail designs for gaming content creator</p>
+                                <div class="portfolio-tags">
+                                    <span>Thumbnail</span>
+                                    <span>YouTube</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="youtube">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?youtube,banner" alt="YouTube Banner Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Tech Channel Branding</h3>
+                                <p>Complete YouTube channel art for tech reviewer</p>
+                                <div class="portfolio-tags">
+                                    <span>Banner</span>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?instagram,reels" alt="Instagram Reels">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fitness Reels Edits</h3>
+                                <p>Viral Instagram Reels for fitness influencer</p>
+                                <div class="portfolio-tags">
+                                    <span>Reels</span>
+                                    <span>Editing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?logo,design" alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Startup Logo Identity</h3>
+                                <p>Modern logo design for tech startup</p>
+                                <div class="portfolio-tags">
+                                    <span>Logo</span>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-category="print">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?poster,design" alt="Poster Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Event Poster Series</h3>
+                                <p>Promotional posters for music festival</p>
+                                <div class="portfolio-tags">
+                                    <span>Poster</span>
+                                    <span>Print</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-category="youtube">
+                    <div class="portfolio-image">
+                        <img src="https://source.unsplash.com/random/800x600?video,editing" alt="Video Editing">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Travel Vlog Editing</h3>
+                                <p>Cinematic video editing for travel channel</p>
+                                <div class="portfolio-tags">
+                                    <span>Video</span>
+                                    <span>Editing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="gradient-text">PixelPulse</span></h2>
+                    <p class="about-intro">
+                        We're not just designers – we're visual storytellers passionate about bringing your ideas to life. At PixelPulse Studio, we combine creativity with strategy to deliver designs that don't just look good – they perform.
+                    </p>
+                    <p class="about-story">
+                        Founded by a team of digital creatives, PixelPulse Studio emerged from a simple belief: everyone deserves access to professional, eye-catching design. Whether you're a YouTuber looking to grow your channel, an influencer building your brand, or a startup making your mark – we're here to amplify your vision.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Lightning Fast Delivery</h4>
+                                <p>Quick turnarounds without compromising quality</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Client-Centric Approach</h4>
+                                <p>Your satisfaction is our top priority</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-gem"></i>
+                            <div>
+                                <h4>Premium Quality</h4>
+                                <p>Pixel-perfect designs every time</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container glow-border">
+                        <img src="https://source.unsplash.com/random/600x800?creative,studio" alt="PixelPulse Studio Team">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle">Choose the perfect package for your needs</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Basic Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/design</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 1 Custom Design</li>
+                        <li><i class="fas fa-check-circle"></i> 2 Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> High Resolution File</li>
+                        <li><i class="fas fa-check-circle"></i> 3-Day Delivery</li>
+                        <li><i class="fas fa-times-circle"></i> Source Files</li>
+                        <li><i class="fas fa-times-circle"></i> Priority Support</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-outline">Choose Basic</a>
+                </div>
+                
+                <!-- Standard Package (Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Standard</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/design</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 3 Custom Designs</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> All File Formats</li>
+                        <li><i class="fas fa-check-circle"></i> 2-Day Delivery</li>
+                        <li><i class="fas fa-check-circle"></i> Source Files</li>
+                        <li><i class="fas fa-check-circle"></i> Priority Support</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-primary">Choose Standard</a>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">199</span>
+                            <span class="period">/package</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 5+ Custom Designs</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> Complete Brand Kit</li>
+                        <li><i class="fas fa-check-circle"></i> 1-Day Delivery</li>
+                        <li><i class="fas fa-check-circle"></i> Source Files</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-outline">Choose Premium</a>
+                </div>
+            </div>
+            
+            <p class="pricing-note">Need a custom package? <a href="#contact">Contact us</a> for tailored pricing.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="gradient-text">Stories</span></h2>
+                <p class="section-subtitle">Don't just take our word for it</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "PixelPulse transformed my YouTube channel! My CTR increased by 40% after getting new thumbnails. The team is incredibly talented and fast!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100?person,portrait" alt="Client">
+                        <div>
+                            <h4>Alex Rivera</h4>
+                            <span>Gaming Content Creator</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The logo they designed perfectly captures our brand essence. Professional, creative, and delivered ahead of schedule. Highly recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100?woman,portrait" alt="Client">
+                        <div>
+                            <h4>Sarah Chen</h4>
+                            <span>Startup Founder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "My Instagram Reels have never looked better! The edits are smooth, trendy, and exactly what I needed to grow my audience."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100?man,portrait" alt="Client">
+                        <div>
+                            <h4>Marcus Johnson</h4>
+                            <span>Fitness Influencer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create <span class="gradient-text">Together</span></h2>
+                <p class="section-subtitle">Ready to elevate your brand? Get in touch!</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@pixelpulse.studio</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="thumbnails">YouTube Thumbnails</option>
+                            <option value="banners">YouTube Banners</option>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="reels">Reels Editing</option>
+                            <option value="logo">Logo Design</option>
+                            <option value="posters">Posters & Billboards</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Pixel<span class="neon-purple">Pulse</span></span>
+                        <span class="logo-tagline">Studio</span>
+                    </a>
+                    <p>Creating pixel-perfect designs that ignite brands and drive engagement.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">YouTube Design</a></li>
+                            <li><a href="#services">Video Editing</a></li>
+                            <li><a href="#services">Logo Design</a></li>
+                            <li><a href="#services">Print Design</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 PixelPulse Studio. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart neon-pink"></i> for creators</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
